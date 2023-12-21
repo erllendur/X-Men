@@ -8,8 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="src/css/reset.css">
-  <link rel="stylesheet" href="src/css/responsivo.css">
+  <link rel="stylesheet" href="src/css/reset.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="src/css/mobile.css" media="(max-width: 767px)">
+
+
 </head>
 
 <body>
@@ -49,17 +51,19 @@
         </li>
       </ul>
     </section>
-    <section class="personagem-selecionado">
-      <img class="personagem-grande" src="src/imagens/card-ciclope.png" alt="Personagem Selecionado">
-
-      <div class="informacoes-personagem">
-        <h2 class="nome-personagem" id="nome-personagem">Ciclope </h2>
-        <p class="descricao-personagem" id="descricao-personagem">Ele tem o poder de disparar rajadas ópticas por um
-          acidente que aconteceu com ele quando criança, mas não consegue controlá-los</p>
-      </div>
-    </section>
+    
   </main>
+  <section class="personagem-selecionado">
+    <img class="personagem-grande" src="src/imagens/card-ciclope.png" alt="Personagem Selecionado">
+
+    <div class="informacoes-personagem">
+      <h2 class="nome-personagem" id="nome-personagem">Ciclope </h2>
+      <p class="descricao-personagem" id="descricao-personagem">Ele tem o poder de disparar rajadas ópticas por um
+        acidente que aconteceu com ele quando criança, mas não consegue controlá-los</p>
+    </div>
+  </section>
 <script src="./src/js/index.js"></script>
+<a href="#" class="avatar"><img src="avatar1.jpg" alt=""></a>
 </body>
 
 </html>
