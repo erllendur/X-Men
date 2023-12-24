@@ -37,7 +37,7 @@ body::before {
   min-height: calc(100vh - 152px);
   justify-content: center;
   position: fixed;
-  margin-left: 250px;
+  margin-left: 570px;
   
 }
 
@@ -77,9 +77,28 @@ body::before {
 .personagem-selecionado {
   align-items: center;
   max-width: 500px;
-  margin-left: 900px;
-  
+  margin-left: 90px;
+  float: left;
 }
+
+.personagem-selecionado-direita {
+  align-items: center;
+  max-width: 500px;
+  margin-right: 40px;
+  float: right;
+}
+
+.personagem-selecionado-direita .nome-personagem {
+  border-bottom: 2px solid #47f4ff;
+  letter-spacing: 4px;
+  text-align: center;
+
+}
+
+
+
+
+
 
 .personagem-selecionado .personagem-grande {
   max-width: 100%;
