@@ -1,22 +1,4 @@
-/*Variável mouseEnterAtivo: Essa variável booleana é responsável por controlar se a função mouseenter pode executar ou não seu código.
-
-Seleção dos elementos .personagem: Utilizando querySelectorAll, selecionamos todos os elementos HTML com a classe .personagem e armazenamos em uma NodeList na variável personagens.
-
-Função mouseEnterHandler: Essa função é um event listener para o evento mouseenter. Ela é responsável por manipular o comportamento quando o mouse entra em um elemento .personagem. Verifica se mouseEnterAtivo é true e, se for, executa o código para atualizar informações na interface com base nos dados do personagem.
-
-Função desativarMouseEnter: É chamada quando um elemento .personagem é clicado. Ela muda o valor de mouseEnterAtivo para false, desativando temporariamente a função mouseenter.
-
-Loop forEach para adicionar event listeners: Percorre todos os elementos .personagem e adiciona dois event listeners:
-
-Um para o evento mouseenter, que chama a função mouseEnterHandler.
-Outro para o evento click, que desativa o mouseenter ao chamar a função desativarMouseEnter.
-Event listener para a tecla "Escape" (keydown): Monitora o documento (document) em busca de eventos keydown. Se a tecla pressionada for "Escape", o mouseEnterAtivo é definido como true, permitindo que a função mouseenter funcione novamente.
-
-Resumidamente, o código controla a ativação e desativação da função mouseenter com base em cliques nos elementos da lista. Ao clicar em um personagem, a função mouseenter é desativada até que a tecla "ESC" seja pressionada, permitindo a interação apenas após esse evento de tecla.
-
-
-
-*/
+-------------
 
 
 
