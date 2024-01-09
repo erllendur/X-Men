@@ -1,123 +1,164 @@
-*{
-  overflow: hidden;
-}
+  *{
+    overflow: hidden;
+  }
 
-body {
-  font-family: "Oxanium", cursive;
-  background-color: #000000;
-  color: #ffffff;
-  margin: 0 auto;
-  zoom: 0.8; 
+  body {
+    font-family: "Oxanium", cursive;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0 auto;
+    zoom: 0.8; 
 
-}
+  }
 
-body::before {
-  content: "";
-  background-image: url(../imagens/bg-desktop.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.2;
-}
+  body::before {
+    content: "";
+    background-image: url(../imagens/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+  }
 
-.cabecalho {
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
-}
+  .cabecalho {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
 
-.selecao-de-personagens {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  min-height: calc(100vh - 152px);
-  justify-content: center;
-  position: fixed;
-  margin-left: 570px;
-  
-}
+  .selecao-de-personagens {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+    position: fixed;
+    margin-left: 570px;
+    
+  }
 
-.selecao-de-personagens .lista-de-personagens {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
+  .selecao-de-personagens .lista-de-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
 
-.selecao-de-personagens .personagens {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 585px;
-  gap: 26px;
-}
+  .selecao-de-personagens .personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 26px;
+  }
 
-.selecao-de-personagens .personagens .titulo {
-  font-size: 20px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  border-bottom: 2px solid #47f4ff;
-  width: 100%;
-  text-align: center;
-}
+  .selecao-de-personagens .personagens .titulo {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #47f4ff;
+    width: 100%;
+    text-align: center;
+  }
 
-.lista-de-personagens .personagem img {
-  width: 100%;
-  height: 100%;
-}
+  .lista-de-personagens .personagem img {
+    width: 100%;
+    height: 100%;
+  }
 
-.lista-de-personagens .personagem.selecionado {
-  box-shadow: 0px 0px 24px 5px #0271f7;
-}
+  .lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px 24px 5px #0271f7;
+  }
 
-.personagem-selecionado {
-  align-items: center;
-  max-width: 500px;
-  margin-left: 90px;
-  float: left;
-}
+  .personagem-selecionado {
+    align-items: center;
+    max-width: 500px;
+    margin-left: 90px;
+    float: left;
+  }
 
-.personagem-selecionado-direita {
-  align-items: center;
-  max-width: 500px;
-  margin-right: 40px;
-  float: right;
-}
+  .personagem-selecionado-direita {
+    align-items: center;
+    max-width: 500px;
+    margin-right: 40px;
+    float: right;
+  }
 
-.personagem-selecionado-direita .nome-personagem {
-  border-bottom: 2px solid #47f4ff;
-  letter-spacing: 4px;
-  text-align: center;
+  .personagem-selecionado-direita .nome-personagem {
+    border-bottom: 2px solid #47f4ff;
+    letter-spacing: 4px;
+    text-align: center;
 
-}
-
-
+  }
 
 
 
 
-.personagem-selecionado .personagem-grande {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
 
-.personagem-selecionado .nome-personagem {
-  border-bottom: 2px solid #47f4ff;
-  letter-spacing: 4px;
-  text-align: center;
-}
 
-.personagem-selecionado .descricao-personagem {
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  margin-top: 20px;
+  .personagem-selecionado .personagem-grande {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
 
-  
-}
+  .personagem-selecionado .nome-personagem {
+    border-bottom: 2px solid #47f4ff;
+    letter-spacing: 4px;
+    text-align: center;
+  }
 
+  .personagem-selecionado .descricao-personagem {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+
+    
+  }
+
+  .button-group1 {
+    /* Estilos para o grupo de botões */
+    /* Por exemplo: */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .button-group1 .button {
+    /* Estilos para cada botão dentro do grupo */
+    /* Por exemplo: */
+    margin-right: 500px;
+  }
+
+  .button-group2 {
+    /* Estilos para o grupo de botões */
+    /* Por exemplo: */
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+  }
+
+  .botao-esquerda,
+  .botao-direita {
+    position: fixed;
+    bottom: 20px; /* Ajuste conforme necessário */
+    z-index: 9999;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .botao-esquerda {
+    left: 290px;
+  }
+
+  .botao-direita {
+    right: 250px;
+  }

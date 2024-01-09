@@ -85,3 +85,19 @@ function atualizarInformacoes(personagem, side) {
      ativarMouseEnter();
    }
  });
+
+ const botaoEsquerdo = document.querySelector('.botao-esquerda');
+const botaoDireito = document.querySelector('.botao-direita');
+
+botaoEsquerdo.addEventListener('click', () => {
+  travarLadoEsquerdo = false;
+  travarLadoDireito = true; // Opcional: bloquear o lado direito quando o esquerdo for destravado
+  travarTudo = false; // Garante que o bloqueio total seja desfeito
+});
+
+botaoDireito.addEventListener('click', () => {
+  travarLadoDireito = false;
+  travarLadoEsquerdo = true; // Opcional: bloquear o lado esquerdo quando o direito for destravado
+  travarTudo = false; // Garante que o bloqueio total seja desfeito
+});
+
